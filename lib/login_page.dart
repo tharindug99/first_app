@@ -148,7 +148,7 @@ class _LoginPageState extends State<LoginPage> {
 
     AlertDialog alertDialog = AlertDialog(
       title: const Text('Error'),
-      content: const Text('Wrong username or password'),
+      content: const Text('Wrong username or Password'),
       actions: [
           okbutton
       ],
