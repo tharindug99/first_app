@@ -1,4 +1,9 @@
 // To parse this JSON data, do
+//     final post = postFromJson(jsonString);
+
+import 'dart:convert';
+
+// To parse this JSON data, do
 //
 //     final post = postFromJson(jsonString);
 
@@ -10,28 +15,20 @@ String postToJson(List<Post> data) => json.encode(List<dynamic>.from(data.map((x
 
 class Post {
   Post({
-    required this.userId,
-    required this.id,
-    required this.title,
-    required this.body,
+    required this.name,
+    required this.city,
   });
 
-  int userId;
-  int id;
-  String title;
-  String body;
+  String name;
+  String city;
 
   factory Post.fromJson(Map<String, dynamic> json) => Post(
-    userId: json["userId"],
-    id: json["id"],
-    title: json["title"],
-    body: json["body"],
+    name: json["name"],
+    city: json["city"],
   );
 
   Map<String, dynamic> toJson() => {
-    "userId": userId,
-    "id": id,
-    "title": title,
-    "body": body,
+    "name": name,
+    "city": city,
   };
 }
