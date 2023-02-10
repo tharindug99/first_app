@@ -1,10 +1,10 @@
 
-import 'package:first_app/splashscreen.dart';
+import 'package:first_app/views/splashscreen.dart';
 import 'package:flutter/material.dart';
-import 'Food_Options.dart';
-import 'login_page.dart';
+import 'views/Food_Options.dart';
+import 'views/login_page.dart';
 
-import 'splashscreen.dart';
+import 'views/splashscreen.dart';
 
 class Home extends StatefulWidget {
   final String username;
