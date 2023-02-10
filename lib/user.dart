@@ -1,3 +1,5 @@
+import 'package:http/http.dart';
+
 class User{
 
   String name;
@@ -21,6 +23,7 @@ class User{
     data['city'] = this.city;
     data['image'] = this.image;
   }
+
 
 
 }
