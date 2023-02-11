@@ -1,4 +1,5 @@
 
+import 'package:first_app/views/homepage_api.dart';
 import 'package:first_app/views/splashscreen.dart';
 import 'package:flutter/material.dart';
 import 'views/Food_Options.dart';
@@ -162,7 +163,17 @@ class _HomeState extends State<Home> {
                                 //padding: EdgeInsets.symmetric(vertical: 10, horizontal: 5),),
                               ),
 
-                            ),//button
+                            ),
+
+                            Container(
+
+                              child: ElevatedButton(onPressed: () {
+                                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> HomePage()));
+                              }, child: Text('API list'),
+                                //padding: EdgeInsets.symmetric(vertical: 10, horizontal: 5),),
+                              ),
+
+                            )//button
                           ],
                         )
                     )

@@ -51,6 +51,7 @@ class _HomePageState extends State<HomePage> {
         visible: isLoaded,
         child: ListView.builder
           (itemCount: posts?.length  ,itemBuilder: (context, index){
+
           return Container(
 
             margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
