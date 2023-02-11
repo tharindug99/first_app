@@ -159,7 +159,7 @@ class _HomeState extends State<Home> {
 
                               child: ElevatedButton(onPressed: () {
                                 Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> LoginPage()));
-                              }, child: Text('Logout'),
+                              }, child: Text('Logout Soon'),
                                 //padding: EdgeInsets.symmetric(vertical: 10, horizontal: 5),),
                               ),
 
