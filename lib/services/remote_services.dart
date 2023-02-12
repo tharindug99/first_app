@@ -4,6 +4,8 @@ import 'package:http/http.dart' as http;
 
 class RemoteServices{  //Responsible for fetching Data from Internet
 
+  //Future method to get all users from API url
+
   Future<List<Post>?> getPosts() async{
       var client = http.Client();
 
