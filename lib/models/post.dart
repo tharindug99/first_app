@@ -7,7 +7,6 @@ import 'dart:convert';
 //    1/02/2023
 //     final post = postFromJson(jsonString);
 
-import 'dart:convert';
 
 List<Post> postFromJson(String str) => List<Post>.from(json.decode(str).map((x) => Post.fromJson(x)));
 
