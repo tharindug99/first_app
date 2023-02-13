@@ -10,7 +10,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  List<Post>? posts;
+  List<UserElement>? posts;
   var isLoaded = false;       // Keep in track whether API response has loaded or not.....
 
   @override
@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
 
   void getData() async //fetch and wait for response
   {
-    posts = await RemoteServices().getPosts();
+    posts = (await RemoteServices().getPosts()) as List<UserElement>?;
     if (posts != null){
       setState(() {
         isLoaded = true;
@@ -67,7 +67,7 @@ class _HomePageState extends State<HomePage> {
             ),
 
 
-            child: Text(posts ! [index].name,style: TextStyle(
+            child: Text(posts ! [index].firstName,style: TextStyle(
               fontSize: 25,
             ),),
           );
